@@ -1,0 +1,51 @@
+{
+  "root": true,
+  "project": {
+    "name": "endringslogg"
+  },
+  "__experimental_spaces": [
+    {
+      "name": "production",
+      "title": "Prod",
+      "default": true,
+      "api": {
+        "projectId": "li581mqu",
+        "dataset": "production"
+      }
+    }
+  ],
+  "api": {
+    "projectId": "li581mqu",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "endringslogg-statistics",
+    "endringslogg-preview"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./components/navLogo.js"
+    },
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "./styles/variables.css"
+    }
+  ]
+}
