@@ -1,13 +1,16 @@
 # familie-endringslogg-sanity
-Sanity-oppsett for team families endringslogg.
-Innholder er tilgjengelig på [familie-endringslogg.sanity.studio/production/desk](https://familie-endringslogg.sanity.studio/production/desk)
+
+Sanity-oppsett for PO arbeidsoppfølgings endringslogg.
+Innholder er tilgjengelig på [https://endringslogg.sanity.studio/production/desk](https://endringslogg.sanity.studio/production/desk)
 
 ## Bygg og deploy
+
 Appen deployes fra lokal maskin ved å kjøre `sanity deploy`
 
 ## Kjøring lokalt
+
 Kan kjøres lokalt med `npm start`
 
-
 ## Henvendelser
-Ta kontakt i [#team-familie-dev](https://nav-it.slack.com/archives/CJN0STWB0)
+
+Ta kontakt i [#po-arbeidsoppfølging](https://nav-it.slack.com/archives/CKZ92LT24)
