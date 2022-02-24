@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-//@ts-ignore
+// @ts-ignore
 import { Endringslogg } from "endringslogg";
 // https://github.com/sanity-io/sanity/issues/456
 import "endringslogg/dist/bundle.css?raw";
@@ -7,7 +7,6 @@ import client from "part:@sanity/base/client";
 import schema from "part:@sanity/base/schema";
 import "@navikt/ds-css?raw";
 import {Box} from "@material-ui/core";
-import {BlockContentType} from "@navikt/familie-endringslogg/dist/utils/endringslogg-custom";
 
 export declare type ModalType = {
   modalHeader?: string;
@@ -15,7 +14,7 @@ export declare type ModalType = {
 };
 declare type Step = {
   slideHeader: string;
-  slideDescription?: BlockContentType;
+  slideDescription?: any;
   altText?: string;
   slideImage?: any;
 };
