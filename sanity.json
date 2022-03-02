@@ -6,7 +6,7 @@
   "__experimental_spaces": [
     {
       "name": "production",
-      "title": "Prod",
+      "title": "Endringslogg",
       "default": true,
       "api": {
         "projectId": "li581mqu",
@@ -23,9 +23,7 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool",
-    "endringslogg-statistics",
-    "endringslogg-preview"
+    "@sanity/desk-tool"
   ],
   "env": {
     "development": {
