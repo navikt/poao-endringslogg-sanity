@@ -1,7 +1,5 @@
 /* ./styles/variables.css */
 
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
-
 :root {
   /* Brand colors */
   --brand-primary: #0067c5;
@@ -9,8 +7,7 @@
   --brand-secondary: #cce1ff;
   --brand-secondary--inverted: #002252;
   /* Typography */
-  --font-family-sans-serif: "Source Sans Pro";
-  --font-size-base: 24px;
+  --font-size-base: 1.5rem;
   /* Main Navigation */
   --main-navigation-color: #4f4f4f;
   --main-navigation-color--inverted: #ffff;

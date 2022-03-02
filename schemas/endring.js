@@ -1,29 +1,3 @@
-import conditionalFields from "./conditionalFields";
-
-const modalSlide = (num) => ({
-  name: `modalSlide${num}`,
-  title: `Modal Slide ${num}`,
-  type: "object",
-  fields: [
-    {
-      name: "slideHeader",
-      type: "string",
-      title: `Modaloverskrift ${num}`,
-    },
-    { name: "slideImage", type: "image", title: `Slidebilde ${num}` },
-    {
-      name: "altText",
-      type: "string",
-      title: `Alternativ tekst for bilde ${num}`,
-    },
-    {
-      name: "slideDescription",
-      type: "blockContent",
-      title: `Slidebeskrivelse ${num}`,
-    },
-  ],
-});
-
 export const endringsloggSchema = (name, title) => ({
   name: name,
   title: title,
@@ -76,7 +50,6 @@ export const endringsloggSchema = (name, title) => ({
       title: "Se hvordan-modal",
       name: "modal",
       type: "object",
-      inputComponent: conditionalFields,
       fields: [
         {
           name: "numSlides",
@@ -89,9 +62,15 @@ export const endringsloggSchema = (name, title) => ({
           name:"forcedModal",
           value: "forcedModal",
           title: "Tvungen modal – dette tvinger modalen til å vises uten at brukeren klikker inn på endringsloggen",
-          type: "boolean"
+          type: "boolean",
+          hidden: ({ parent }) => parent?.numSlides <= 0
         },
-        { name: "modalHeader", type: "string", title: "Modaloverskrift" },
+        {
+          name: "modalHeader",
+          type: "string",
+          title: "Modaloverskrift",
+          hidden: ({ parent }) => parent?.numSlides <= 0
+        },
         modalSlide(1),
         modalSlide(2),
         modalSlide(3),
@@ -106,3 +85,29 @@ export const endringsloggSchema = (name, title) => ({
     },
   ],
 });
+
+const modalSlide = (num) => ({
+  name: `modalSlide${num}`,
+  title: `Modal Slide ${num}`,
+  type: "object",
+  hidden: ({ parent }) => parent?.numSlides < num,
+  fields: [
+    {
+      name: "slideHeader",
+      type: "string",
+      title: `Modaloverskrift ${num}`,
+    },
+    { name: "slideImage", type: "image", title: `Slidebilde ${num}` },
+    {
+      name: "altText",
+      type: "string",
+      title: `Alternativ tekst for bilde ${num}`,
+    },
+    {
+      name: "slideDescription",
+      type: "blockContent",
+      title: `Slidebeskrivelse ${num}`,
+    },
+  ],
+});
+

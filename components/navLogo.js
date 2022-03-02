@@ -1,7 +1,8 @@
 import React from 'react';
+import navLogoPng from "../static/nav-logo.png";
 
 const navLogo = () => (
-    <img src="../static/nav-logo.png" width="70px" alt="NAV-logo"/>
+    <img src={navLogoPng} width="70px" alt="NAV-logo"/>
   );
   
 export default navLogo;
