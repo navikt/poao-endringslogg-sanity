@@ -7,6 +7,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 // We import object and document schemas
 import blockContent from "./blockContent";
 import { endringsloggSchema } from "./endring";
+import {oversiktAlert} from "./oversiktAlert";
 
 export default createSchema({
   // We name our schema
@@ -14,7 +15,8 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    endringsloggSchema("afolg", "OBO: Oversikten"),
+    endringsloggSchema("afolg", "Endringslogg: Oversikten"),
+    oversiktAlert("alert_overiskten", "Alert: Oversikten"),
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

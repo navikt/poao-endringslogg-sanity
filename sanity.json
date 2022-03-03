@@ -6,7 +6,7 @@
   "__experimental_spaces": [
     {
       "name": "production",
-      "title": "Endringslogg",
+      "title": "poao",
       "default": true,
       "api": {
         "projectId": "li581mqu",
