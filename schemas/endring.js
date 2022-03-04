@@ -56,6 +56,7 @@ export const endringsloggSchema = (name, title) => ({
                     value: "numSlides",
                     title: "Antall modal slides",
                     type: "number",
+                    initialValue: 0,
                     validation: (Rule) => Rule.required().min(0).max(10),
                 },
                 {
@@ -63,13 +64,13 @@ export const endringsloggSchema = (name, title) => ({
                     value: "forcedModal",
                     title: "Tvungen modal – dette tvinger modalen til å vises uten at brukeren klikker inn på endringsloggen",
                     type: "boolean",
-                    hidden: ({parent}) => parent?.numSlides <= 0
+                    hidden: ({parent}) => parent?.numSlides === undefined || parent?.numSlides <= 0
                 },
                 {
                     name: "modalHeader",
                     type: "string",
                     title: "Modaloverskrift",
-                    hidden: ({parent}) => parent?.numSlides <= 0
+                    hidden: ({parent}) => parent?.numSlides === undefined || parent?.numSlides <= 0
                 },
                 modalSlide(1),
                 modalSlide(2),
@@ -100,7 +101,7 @@ const modalSlide = (num) => ({
     name: `modalSlide${num}`,
     title: `Modal Slide ${num}`,
     type: "object",
-    hidden: ({parent}) => parent?.numSlides < num,
+    hidden: ({parent}) => parent?.numSlides === undefined || parent?.numSlides < num,
     fields: [
         {
             name: "slideHeader",
