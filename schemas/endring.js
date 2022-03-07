@@ -22,6 +22,7 @@ export const endringsloggSchema = (name, title) => ({
             name: 'publisert',
             description: 'Sett denne til publisert når meldingen skal vises i prod. Meldingen vil vises i preprod også før bryteren avhukes',
             type: 'boolean',
+            initialValue: false,
         },
         {
             title: "Release date",

@@ -3,17 +3,6 @@
   "project": {
     "name": "endringslogg"
   },
-  "__experimental_spaces": [
-    {
-      "name": "production",
-      "title": "poao",
-      "default": true,
-      "api": {
-        "projectId": "li581mqu",
-        "dataset": "production"
-      }
-    }
-  ],
   "api": {
     "projectId": "li581mqu",
     "dataset": "production"
