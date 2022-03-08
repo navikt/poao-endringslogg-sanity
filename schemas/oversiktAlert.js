@@ -24,6 +24,7 @@ export const oversiktAlert = (name, title) => ({
             validation: (Rule) => Rule.required(),
             options: {
                 list: [
+                    {title: 'Success', value: 'success'},
                     {title: 'Info', value: 'info'},
                     {title: 'Warning', value: 'warning'},
                     {title: 'Error', value: 'error'},
