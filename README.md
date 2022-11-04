@@ -14,3 +14,4 @@ Kan kjøres lokalt med `npm start`
 ## Henvendelser
 
 Ta kontakt i [#po-arbeidsoppfølging](https://nav-it.slack.com/archives/CKZ92LT24)
+
