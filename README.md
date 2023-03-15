@@ -1,4 +1,4 @@
-# familie-endringslogg-sanity
+# poao-endringslogg-sanity
 
 Sanity-oppsett for PO arbeidsoppfølgings endringslogg.
 Innholder er tilgjengelig på [https://endringslogg.sanity.studio/production/desk](https://endringslogg.sanity.studio/production/desk)
