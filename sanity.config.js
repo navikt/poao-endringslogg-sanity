@@ -2,6 +2,7 @@ import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemas} from './schemas/schema'
+import {structure} from "./deskStructures/deskStructure";
 
 export default defineConfig({
     name: "endringslogg",
@@ -9,7 +10,7 @@ export default defineConfig({
     projectId: "li581mqu",
     dataset: "production",
     plugins: [
-        deskTool(undefined),
+        deskTool({structure: structure}),
         visionTool(),
     ],
     schema: {

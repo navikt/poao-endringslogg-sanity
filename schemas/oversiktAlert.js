@@ -1,6 +1,6 @@
-export const oversiktAlert = (name, title) => ({
-    name: name,
-    title: title,
+export const oversiktAlert = () => ({
+    name: 'alert_overiskten',
+    title: 'Alert: Oversikten',
     type: "document",
     fields: [
         {

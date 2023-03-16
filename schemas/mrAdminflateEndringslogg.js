@@ -26,8 +26,7 @@ const modalSlide = (num) => ({
 });
 
 export const mrAdminflateEndringsloggSchema = defineType({
-
-    name: "mrAdminflate",
+    name: "endringslogg_mr-adminflate",
     title: "Endringslogg: MR Adminflate",
     type: "document",
     fields: [

@@ -1,6 +1,6 @@
-export const endringsloggSchema = (name, title) => ({
-    name: name,
-    title: title,
+export const endringsloggSchema = () => ({
+    name: 'afolg',
+    title: "Endringslogg: Oversikten",
     type: "document",
     fields: [
         {
