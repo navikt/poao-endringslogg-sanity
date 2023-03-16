@@ -1,6 +1,10 @@
-export const oversiktAlert = () => ({
+import {GrCircleAlert} from "react-icons/gr"
+import {defineType} from "sanity";
+
+export const oversiktAlert = defineType({
     name: 'alert_overiskten',
     title: 'Alert: Oversikten',
+    icon: GrCircleAlert,
     type: "document",
     fields: [
         {
