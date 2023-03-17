@@ -9,7 +9,8 @@ Appen deployes fra lokal maskin ved å kjøre `sanity deploy`
 
 ## Kjøring lokalt
 
-Kan kjøres lokalt med `npm start`
+Du må først logge deg på Sanity via sso, som gjøres ved å kjøre `sanity login --sso navikt` .
+Kjøres lokalt med `npm start`
 
 ## Henvendelser
 
