@@ -1,4 +1,4 @@
-# familie-endringslogg-sanity
+# poao-endringslogg-sanity
 
 Sanity-oppsett for PO arbeidsoppfølgings endringslogg.
 Innholder er tilgjengelig på [https://endringslogg.sanity.studio/production/desk](https://endringslogg.sanity.studio/production/desk)
@@ -9,7 +9,8 @@ Appen deployes fra lokal maskin ved å kjøre `sanity deploy`
 
 ## Kjøring lokalt
 
-Kan kjøres lokalt med `npm start`
+Du må først logge deg på Sanity via sso, som gjøres ved å kjøre `sanity login --sso navikt` .
+Kjøres lokalt med `npm start`
 
 ## Henvendelser
 

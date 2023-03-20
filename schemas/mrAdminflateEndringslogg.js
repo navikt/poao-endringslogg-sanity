@@ -1,10 +1,10 @@
-import {MdNotificationsActive} from "react-icons/md"
+import {MdNotificationsActive} from "react-icons/md";
 import {modalSlide} from "./modalSlide";
 import {defineType} from "sanity";
 
-export const endringsloggSchema = defineType({
-    name: 'afolg',
-    title: "Endringslogg: Oversikten",
+export const mrAdminflateEndringsloggSchema = defineType({
+    name: "endringslogg_mr-adminflate",
+    title: "Endringslogg: MR Adminflate",
     icon: MdNotificationsActive,
     type: "document",
     fields: [
@@ -23,7 +23,6 @@ export const endringsloggSchema = defineType({
             validation: (Rule) => Rule.required(),
         },
         {
-            title: 'Publisert',
             name: 'publisert',
             description: 'Sett denne til publisert når meldingen skal vises i prod. Meldingen vil vises i preprod også før bryteren avhukes',
             type: 'boolean',
@@ -83,11 +82,6 @@ export const endringsloggSchema = defineType({
                 modalSlide(3),
                 modalSlide(4),
                 modalSlide(5),
-                modalSlide(6),
-                modalSlide(7),
-                modalSlide(8),
-                modalSlide(9),
-                modalSlide(10),
             ],
         },
     ],
@@ -102,6 +96,3 @@ export const endringsloggSchema = defineType({
         }
     ]
 });
-
-
-
