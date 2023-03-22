@@ -44,4 +44,10 @@ export default defineConfig({
     schema: {
         types: schemas
     },
+    studio: {
+        components: {
+            logo: NavLogo,
+        }
+    },
+    theme: NAVTheme
 })
