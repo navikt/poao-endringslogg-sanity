@@ -3,6 +3,20 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemas} from './schemas/schema'
 import {structure} from "./deskStructures/deskStructure";
+import NavLogo from "./components/navLogo"
+
+const NAVTheme = buildLegacyTheme({
+    /* Brand colors */
+    '--brand-primary': '#0067c5',
+    '--brand-primary--inverted': '#ffffff',
+    '--brand-secondary': '#cce1ff',
+    '--brand-secondary--inverted': '#002252',
+    /* Typography */
+    '--font-size-base': '1.5rem',
+    /* Main Navigation */
+    '--main-navigation-color': '#595959',
+    '--main-navigation-color--inverted': '#ffffff'
+})
 
 export default defineConfig({
     name: "endringslogg",
