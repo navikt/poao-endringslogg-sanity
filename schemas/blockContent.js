@@ -5,9 +5,9 @@ import {defineType} from "sanity";
  * for this blog studio. When you import it in schemas.js it can be
  * reused in other parts of the studio with:
  *  {
- *    name: 'someName',
- *    title: 'Some title',
- *    type: 'blockContent'
+ *    name: "someName",
+ *    title: "Some title",
+ *    type: "blockContent"
  *  }
  */
 export const blockContent = defineType({
@@ -23,8 +23,8 @@ export const blockContent = defineType({
             // you want and decide how you want to deal with it where you want to
             // use your content.
             styles: [
-                {title: 'Bullet', value: 'bullet'},
-                {title: 'Numbered', value: 'number'}
+                {title: "Bullet", value: "bullet"},
+                {title: "Numbered", value: "number"}
             ],
             // Marks let you mark up inline text in the block editor.
             marks: {
@@ -39,7 +39,7 @@ export const blockContent = defineType({
                     {
                         name: "link",
                         type: "object",
-                        title: 'External link',
+                        title: "External link",
                         fields: [
                             {
                                 name: "href",
