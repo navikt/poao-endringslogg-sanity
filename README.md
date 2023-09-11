@@ -5,7 +5,7 @@ Innholder er tilgjengelig på [https://endringslogg.sanity.studio/production/des
 
 ## Bygg og deploy
 
-Appen deployes fra lokal maskin ved å kjøre `sanity deploy`
+Appen deployes fra lokal maskin ved å kjøre `(npx) sanity deploy`
 
 ## Kjøring lokalt
 
