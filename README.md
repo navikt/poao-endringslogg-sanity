@@ -1,7 +1,7 @@
 # poao-endringslogg-sanity
 
 Sanity-oppsett for PO arbeidsoppfølgings endringslogg.
-Innholder er tilgjengelig på [https://endringslogg.sanity.studio/production/desk](https://endringslogg.sanity.studio/production/desk)
+Innholder er tilgjengelig på [https://endringslogg.sanity.studio/production/structure](https://endringslogg.sanity.studio/production/structure)
 
 ## Bygg og deploy
 
