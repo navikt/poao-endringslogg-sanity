@@ -17,7 +17,7 @@ For å redigere innhald trengs "Editor".
 Be nokon i teamet som har Administrator-rolla om å oppdatere rollane til brukaren din.
 
 Du kan sjekke kven som har kva tilgangar på organisasjons-sidene til Sanity: https://www.sanity.io/organizations/ojSsHMQGf/project/li581mqu/members-v2
-
+Vel "Sign in with SSO" og skriv inn `navikt` som "Organization slug".
 
 ### Logge inn
 For å logge inn med SSO køyrer du følgjande linje i terminalen:  
