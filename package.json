@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "sanity": "3.22.2",
-    "@sanity/cli": "3.22.2",
+    "@sanity/cli": "3.65.1",
     "@sanity/vision": "3.22.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
