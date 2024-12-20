@@ -5,7 +5,7 @@ import {schemas} from './schemas/schema'
 import {structure} from "./deskStructures/deskStructure";
 import NavLogo from "./components/navLogo"
 
-const NAVTheme = buildLegacyTheme({
+const NavTheme = buildLegacyTheme({
     /* Brand colors */
     '--brand-primary': '#0067c5',
     '--brand-primary--inverted': '#ffffff',
@@ -49,5 +49,5 @@ export default defineConfig({
             logo: NavLogo,
         }
     },
-    theme: NAVTheme
+    theme: NavTheme
 })
