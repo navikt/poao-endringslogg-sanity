@@ -25,7 +25,7 @@ For å logge inn med SSO køyrer du følgjande linje i terminalen:
 
 ### Deploy
 Hent nyaste versjon av `main`-greina før du deployer.  
-Appen vert deploya frå lokal maskin ved å køyre
+Appen vert deploya frå lokal maskin ved å køyre  
 `npx sanity deploy`
 
 ## Kjøring lokalt
