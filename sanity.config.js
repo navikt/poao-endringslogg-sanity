@@ -1,13 +1,12 @@
 import {createAuthStore, defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
+import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemas} from './schemas/schema'
 import {structure} from "./deskStructures/deskStructure";
-import NavLogo from "./components/navLogo"
 
 export default defineConfig({
     name: "endringslogg",
-    title: "endringslogg",
+    title: "Endringslogg",
     projectId: "li581mqu",
     dataset: "production",
     auth: createAuthStore({
@@ -25,15 +24,10 @@ export default defineConfig({
         ],
     }),
     plugins: [
-        deskTool({structure: structure}),
+        structureTool({structure: structure}),
         visionTool(),
     ],
     schema: {
         types: schemas
-    },
-    studio: {
-        components: {
-            logo: NavLogo,
-        }
     },
 })
