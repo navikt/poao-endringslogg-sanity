@@ -14,7 +14,13 @@ updates:
         patterns:
           - "sanity"
           - "@sanity/*"
+        update-types:
+          - "patch"
+          - "minor"
       react-dependencies:
         patterns:
           - "react"
           - "react-dom"
+        update-types:
+          - "patch"
+          - "minor"
