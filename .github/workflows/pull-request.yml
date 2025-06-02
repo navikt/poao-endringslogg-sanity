@@ -5,6 +5,8 @@ on: pull_request
 jobs:
   cypress-run:
     name: Install and build
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
