@@ -23,6 +23,9 @@ Vel "Sign in with SSO" og skriv inn `navikt` som "Organization slug".
 For å logge inn med SSO køyrer du følgjande linje i terminalen:  
 `npx sanity login --sso navikt`
 
+#### Logge ut etterpå
+`npx sanity logout`
+
 ### Deploy
 Hent nyaste versjon av `main`-greina før du deployer.  
 Appen vert deploya frå lokal maskin ved å køyre  
