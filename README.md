@@ -1,7 +1,11 @@
 # poao-endringslogg-sanity
 
-Sanity-oppsett for PO arbeidsoppfølging sin endringslogg.
+Sanity-oppsett for PO arbeidsoppfølging sin endringslogg. 
 Innholdet er tilgjengeleg på [https://endringslogg.sanity.studio/production/structure](https://endringslogg.sanity.studio/production/structure)
+
+Meldingene blir synlig i Endringsloggen i Modia Arbeidsretta oppfølging når de er publisert.
+
+![Skjermbilde som viser Endringslogg med meldinger i Modia Arbeidsretta oppfølging.](readme_illustrasjon_endringsloggmeldinger.png)
 
 ## Bygg og deploy
 For å få nye endringar i main ut i prod må appen deployast manuelt frå eiga maskin.
