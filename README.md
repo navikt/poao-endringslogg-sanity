@@ -13,6 +13,12 @@ For å få nye endringar i main ut i prod må appen deployast manuelt frå eiga 
 Før du kan gjere dette må du gje brukaren din rette tilgangar og logge inn i Sanity frå terminalen din.
 
 ### Tilgangar
+Gje SSO-brukaren dit tilgang til Sanity:
+1. Gå til  https://myapps.microsoft.com/
+2. "Legg til apper" og (?) "Be om nye apper"
+3. Søk opp Sanity
+4. Legg den til. No kan du gå vidare til neste steg.  
+
 Gå til sida for endringsloggen (lenka frå fyrste avsnitt), logg inn med SSO for navikt. Dette gjev lesetilgang til brukaren din.
 
 Utviklarar treng rollene "Administrator" og "Developer".
