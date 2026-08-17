@@ -13,7 +13,6 @@ export default defineConfig({
         projectId: "li581mqu",
         dataset: "production",
         redirectOnSingle: false,
-        mode: "append",
         providers: [
             {
                 "name": "saml",
