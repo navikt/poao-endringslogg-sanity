@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: 'weekly'
     cooldown:
-      default-days: 7
+      default-days: 4
     groups:
       workflow-updates:
         patterns:
@@ -25,16 +25,9 @@ updates:
         patterns:
           - "sanity"
           - "@sanity/*"
-        update-types:
-          - "patch"
-          - "minor"
-          - "major"
       react-dependencies:
         patterns:
           - "react"
           - "react-dom"
-        update-types:
-          - "patch"
-          - "minor"
     cooldown:
-      default-days: 7
+      default-days: 4
